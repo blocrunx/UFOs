@@ -26,11 +26,17 @@ function buildTable(data) {
 
   function handleClick() {
     // Grab the datetime value from the filter
+    let place = d3.select("#city").property("value");
     let date = d3.select("#datetime").property("value");
     let filteredData = tableData;
     
      // Check to see if a date was entered and filter the
     // data using that date.
+    if (place) {
+      // Apply `filter` to the table data to only keep the
+      // rows where the `datetime` value matches the filter value
+      filteredData = filteredData.filter(row => row.city === place);
+    };
     if (date) {
       // Apply `filter` to the table data to only keep the
       // rows where the `datetime` value matches the filter value
