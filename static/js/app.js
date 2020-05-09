@@ -32,23 +32,13 @@ var filterObject = {};
     let sightingState = d3.select("#state").property("value");
     let sightingCountry = d3.select("#country").property("value");
     let sightingShape = d3.select("#shape").property("value");
-    
-    
-    
-     // Check to see if a date was entered and filter the
-    // data using that date.
-    /*if (place) {
-      // Apply `filter` to the table data to only keep the
-      // rows where the `datetime` value matches the filter value*/
-      //filteredData = filteredData.filter(row => row.city === place);
-
-    //};
-    if (sightingDate) {
-      // Apply `filter` to the table data to only keep the
-      // rows where the `datetime` value matches the filter value
-      filterObject.date=date;
+        
+    // Conditionals to check user entered filter entries 
+    if (sightingDate){
+      filterObject.date=sightingDate;
     };
-    if(sightingPlace) {
+
+    if(sightingPlace){
       filterObject.city=sightingPlace;
     };
 
