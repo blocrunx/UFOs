@@ -46,15 +46,9 @@
                 <div class="col-md-3">
                     <form class="bg-dark">
                         <p>Filter Search</p>
-                        <ul class="list-group bg-dark">
+                        <ul class="list-group bg-dark">          
                             
-                            <!---<li class="list-group-item bg-dark">
-                                <label for="sightingDate">Enter Date</label>
-                                <input type="text" placeholder="" id="datetime" />
-                                
-                            </li> --->
-                            
-                            <li class="list-group-item bg-dark">
+                                <li class="list-group-item bg-dark">
                                 <label for="sightingPlace">Enter City</label>
                                 <input type="text" placeholder="" id="city" />
                                 
@@ -83,7 +77,9 @@
                             </li>
                             
                             <li class="list-group-item bg-dark">
-                                <button id="filter-btn" type="button" class="btn-dark">Filter Table</button>
+                                <button id="filter-btn" type="button" class="btn-dark">Filter Table</button>                                             
+                                <button class="btn-dark" onclick="location.reload();">Clear Filters</button>
+                            
                             </li>
                         </ul>
                     </form>
