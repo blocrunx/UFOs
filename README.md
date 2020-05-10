@@ -1,6 +1,6 @@
 # UFOs
 ### Project Overview
-Dana would like to make her webpage more user firendly by adding the ability to filter by date, city, state, country, and UFO shape. This will be accomplied using the following steps:
+Dana curates a UFO website and would like to make her webpage more user firendly by adding the ability to filter the table of UFO sighting data by date, city, state, country, and UFO shape. This will be accomplied using the following steps:
 - Write a function named buildFilters to:
   - Select target html elements using D3.
   - Use an if statement to test whether a user entry exists in the the following input html boxes:
@@ -23,4 +23,8 @@ Dana would like to make her webpage more user firendly by adding the ability to 
 - Languages: Javascript ES6+, HTML, CSS
 - Software: Visual Studio Code 1.45.0, Chrome 81.0.4044.138
 
-### Summary
+### Recommendations
+- Add additional data sets to build websites data store.
+- User input option to log sightings in real time.
+- User forum for information sharing and community building.
+- Table filter options to futher aggrigate data ie) search by frequency per city in ascending/descending order.
