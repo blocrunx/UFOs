@@ -32,10 +32,11 @@ var filterObject = {};
     let sightingState = d3.select("#state").property("value");
     let sightingCountry = d3.select("#country").property("value");
     let sightingShape = d3.select("#shape").property("value");
+    
         
     // Conditionals to check user entered filter entries 
     if (sightingDate){
-      filterObject.date=sightingDate;
+      filterObject.datetime=sightingDate;
     };
 
     if(sightingPlace){
@@ -54,8 +55,7 @@ var filterObject = {};
       filterObject.shape=sightingShape;
     };
     
-  
-    
+       
      // Rebuild the table using the filtered data
     // @NOTE: If no date was entered, then filteredData will
     // just be the original tableData.
